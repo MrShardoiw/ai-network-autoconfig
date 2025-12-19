@@ -1,0 +1,4 @@
+devices:
+  - name: dummy-router-1
+    vendor: cisco
+    host: 127.0.0.1  # Localhost for simulation
