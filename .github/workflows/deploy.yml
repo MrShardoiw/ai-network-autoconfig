@@ -1,0 +1,22 @@
+name: Simulation Deployment
+
+on: [push] # This makes it easy to test every time you upload code
+
+jobs:
+  run-simulation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        # We only need pyyaml to read your device list
+        run: pip install pyyaml 
+
+      - name: Run Dummy Agent
+        # Notice: No 'env' or 'secrets' needed here yet!
+        run: python agent/ai_agent.py
