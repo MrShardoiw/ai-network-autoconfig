@@ -1,4 +1,0 @@
-security_policies:
-  - "No telnet allowed"
-  - "SSH version 2 must be enabled"
-  - "Description required on all interfaces"

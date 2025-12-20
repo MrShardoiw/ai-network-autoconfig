@@ -1,3 +1,0 @@
-netmiko
-pyyaml
-# openai  <-- Commented out because we are using the Dummy AI
